@@ -1,3 +1,5 @@
+import Footer from "./footer";
+import Navbar from "./navbar";
 
 
 type Props = {
@@ -7,9 +9,9 @@ type Props = {
 const Layout: React.FC<Props> = ({ children }) => {
   return (
     <div>
-      <nav>nav</nav>
+      <Navbar/>
       {children}
-      <footer>footer</footer>
+      <Footer/>
     </div>
   );
 };

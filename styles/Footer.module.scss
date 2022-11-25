@@ -1,0 +1,23 @@
+$footer-height: 70px;
+$yellow: #fcd41c;
+$brown: #662716;
+$green: #67aca3;
+$olivine: #a0bd73;
+$beige-gray: #706854;
+$white: #ffffff;
+$black: #161616;
+
+
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: $footer-height;
+    background-color: $black;
+    color: $white;
+    text-align: center;
+    border-top: 2px solid $yellow;
+  }
+  
