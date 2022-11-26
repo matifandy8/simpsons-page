@@ -1,29 +1,26 @@
 import Link from 'next/link'
 import React from 'react'
+import CharacterCard from '../../components/characters/characterCard'
+import styles from '../../styles/Characters.module.scss'
 
-const Characters: React.FC = ({characters}:any) =>{
-    console.log(characters)
+const Characters: React.FC = ({ characters }: any) => {
   return (
     <div>
-          <div>
-            {characters.map((character:any) => (
-              <Link href={"/projects/" + character.id} key={character.id}>
-                <div key={character.id}>
-                  <h2>{character.name}</h2>
-                  <img src={character.image} alt="project" />
-                </div>
-              </Link>
-            ))}
-          </div>
+      <div className={styles.characters}>
+        {characters.map((character: any) => (
+          <CharacterCard key={character.id} CharacterItem={character} />
+        ))}
+
+      </div>
     </div>
   )
 }
 
 export async function getServerSideProps() {
-    const res = await fetch(`http://localhost:3000/api/characters`)
-    const characters = await res.json()
-  
-    return { props: { characters } }
-  }
+  const res = await fetch(`http://localhost:3000/api/characters`)
+  const characters = await res.json()
+
+  return { props: { characters } }
+}
 
 export default Characters
