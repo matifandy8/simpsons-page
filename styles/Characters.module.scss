@@ -1,3 +1,11 @@
+$yellow: 	#fcd41c;
+$brown: #662716;
+$green: #67aca3;
+$olivine: #a0bd73;
+$beige-gray: #706854;
+$white: #ffffff;
+$black: #161616;
+
 .characters{
     text-align: center;
     padding: 0.5rem 1rem;
@@ -13,4 +21,5 @@
 .card{
     border: 1px solid black;
     border-radius: 5px;
+    background-color: $yellow;
 }
