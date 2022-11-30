@@ -1,17 +1,17 @@
 import React from 'react'
 import Image from 'next/image'
-import Qoutes from '../../components/characters/qoutes'
+import Quotes from '../../components/characters/quotes'
+import styles from '../../styles/Characters.module.scss'
+
 
 const Character: React.FC = ({ character }: any) => {
   return (
-    <div className='character'>
+    <div className={styles.character}>
       <div className='character_info'>
         <h1>{character.name}</h1>
         <Image src={character.image} alt={character.name} width={200} height={300} />
       </div>
-      <div className='character_qoutes'>
-        <Qoutes characterName={character.name} />
-      </div>
+        <Quotes characterName={character.name} />
     </div>
   )
 }

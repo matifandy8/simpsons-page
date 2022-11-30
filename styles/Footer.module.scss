@@ -10,14 +10,14 @@ $black: #161616;
 
 
 .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: $footer-height;
-    background-color: $black;
-    color: $white;
-    text-align: center;
-    border-top: 2px solid $yellow;
-  }
-  
+  position:fixed;
+  left:0;
+  bottom:0;
+  right:0;
+  width: 100%;
+  height: $footer-height;
+  background-color: $black;
+  color: $white;
+  text-align: center;
+  border-top: 2px solid $yellow;
+}

@@ -23,3 +23,28 @@ $black: #161616;
     border-radius: 5px;
     background-color: $yellow;
 }
+
+
+.character{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height:100%;
+}
+.quote{
+    padding: 30px;
+}
+.quote_text{
+    font-size: 14px;
+}
+
+
+@media (min-width: 850px) {
+    .character{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+    }
+}
