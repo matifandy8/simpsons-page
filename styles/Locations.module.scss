@@ -6,7 +6,7 @@ $beige-gray: #706854;
 $white: #ffffff;
 $black: #161616;
 
-.characters{
+.locations{
     text-align: center;
     padding: 0.5rem 1rem;
     display: grid;
@@ -20,18 +20,14 @@ $black: #161616;
     border: 1px solid black;
     border-radius: 5px;
 }
-.character{
+.location{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.quote{
-    padding: 30px;
-}
-.quote_text{
-    font-size: 14px;
-}
+
+
 @media (min-width: 850px) {
     .character{
         display: flex;
