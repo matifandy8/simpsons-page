@@ -10,8 +10,8 @@ const CharacterCard: React.FC<any> = ({ CharacterItem }: any) => {
     return (
         <div key={CharacterItem.id} className={styles.card}>
             <Image src={CharacterItem.image} alt={CharacterItem.name} width={150} height={250} />
-            <h1>{CharacterItem.name}</h1>
-            <Link href={"/characters/" + CharacterItem.id}><h2>More info</h2></Link>
+            <h2>{CharacterItem.name}</h2>
+            <Link href={"/characters/" + CharacterItem.id}><h3>More info</h3></Link>
         </div>
     )
 }

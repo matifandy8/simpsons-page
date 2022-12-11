@@ -5,12 +5,16 @@ import styles from '../../styles/Characters.module.scss'
 
 const Characters: React.FC = ({ characters }: any) => {
   return (
+    <div>
+      <h1 className={styles.title}>Characters</h1>
       <div className={styles.characters}>
         {characters.map((character: any) => (
           <CharacterCard key={character.id} CharacterItem={character} />
         ))}
 
       </div>
+    </div>
+
   )
 }
 
