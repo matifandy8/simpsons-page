@@ -40,6 +40,20 @@ body {
   padding:0;
   width: 100%;
  }
+
+ body::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+background-color: $yellow;
+outline: 1px solid black;
+border-radius: 10px;
+}
  
  #__next {
   display: flex;
