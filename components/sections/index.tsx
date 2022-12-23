@@ -8,10 +8,10 @@ import Link from 'next/link'
 const SectionCard: React.FC<any> = ({ sectionItem }: any) => {
     return (
         <div key={sectionItem.id} className={styles.card}>
-            <Link href={sectionItem.link}>
-            <Image src={sectionItem.image} alt={sectionItem.name} width={400} height={350} />
-            <h2>{sectionItem.name}</h2>
+            <Link href={sectionItem.link} className={styles.card_link}>
+                <Image src={sectionItem.image} alt={sectionItem.name} width={400} height={350} />
             </Link>
+            <h2>{sectionItem.name}</h2>
         </div>
     )
 }
