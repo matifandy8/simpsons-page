@@ -1,0 +1,75 @@
+$yellow: #fcd41c;
+$brown: #662716;
+$green: #67aca3;
+$olivine: #a0bd73;
+$beige-gray: #706854;
+$white: #ffffff;
+$black: #161616;
+
+.episodes {
+    text-align: center;
+    padding: 0.5rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+    align-items: stretch;
+    padding: 1rem;
+    padding-bottom: 200px;
+}
+
+.title {
+    text-align: center;
+}
+
+.card {
+    .image {
+        opacity: 1;
+        height: 150px;
+        margin: auto;
+        width: 200px;
+        transition: 0.3s;
+        background-color: #161616;
+
+        .middle {
+            transition: .5s ease;
+            opacity: 0;
+            top: 25%;
+            transform: translate(0%, -113%);
+            -ms-transform: translate(0%, -113%);
+            text-align: center;
+
+            :hover {
+                opacity: 1;
+                background-color: #161616;
+            }
+        }
+
+        .text {
+            color: white;
+            font-size: 16px;
+            height: 150px;
+
+        }
+
+        :hover {
+            opacity: 0.5;
+        }
+    }
+}
+
+.episode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+@media (min-width: 850px) {
+    .episode {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+    }
+}
