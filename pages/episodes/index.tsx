@@ -1,15 +1,24 @@
 import React from 'react'
 import EpisodeCard from '../../components/episodeCard'
+import { seasons } from '../../data'
 import styles from '../../styles/Episodes.module.scss'
 
 const Episodes: React.FC = ({ episodes }: any) => {
   return (
     <div>
       <h1 className={styles.title}>Episodes</h1>
+      <div className={styles.selectSeason}>
+        <span>Seleccionar temporada</span>
+        <select name="" id="select-season">
+          {seasons.map((season: any) => (
+            <option value={season.id}>Temporada {season.id}</option>
+          ))}
+        </select>
+      </div>
       <div className={styles.episodes}>
-         {episodes.map((episode: any) => (
+        {episodes.map((episode: any) => (
           <EpisodeCard key={episode.id} episodeItem={episode} />
-        ))} 
+        ))}
 
       </div>
     </div>
