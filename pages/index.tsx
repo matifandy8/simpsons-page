@@ -4,8 +4,8 @@ import styles from '../styles/Home.module.scss'
 
 export const sections = [
   { "id": "1", "name": "Episodes","link": "episodes", "image": "https://res.cloudinary.com/dp7vfoqbw/image/upload/v1670793347/simpsons_xbg6jd.jpg" },
-  { "id": "2", "name": "Locations","link": "locations", "image": "https://res.cloudinary.com/dp7vfoqbw/image/upload/v1670793347/simpsons_xbg6jd.jpg" },
-  { "id": "3", "name": "Characters","link": "characters", "image": "https://res.cloudinary.com/dp7vfoqbw/image/upload/v1670793347/simpsons_xbg6jd.jpg" }
+  { "id": "2", "name": "Locations","link": "locations", "image": "https://res.cloudinary.com/dp7vfoqbw/image/upload/v1672184854/location_na3np8.webp" },
+  { "id": "3", "name": "Characters","link": "characters", "image": "https://res.cloudinary.com/dp7vfoqbw/image/upload/v1672185037/characters_sztwgx.jpg" }
 ]
 
 export default function Home() {
