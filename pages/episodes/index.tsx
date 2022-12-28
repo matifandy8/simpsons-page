@@ -11,7 +11,7 @@ const Episodes: React.FC = ({ episodes }: any) => {
         <span>Seleccionar temporada</span>
         <select name="" id="select-season">
           {seasons.map((season: any) => (
-            <option value={season.id}>Temporada {season.id}</option>
+            <option key={season.id} value={season.id}>Temporada {season.id}</option>
           ))}
         </select>
       </div>
@@ -27,7 +27,7 @@ const Episodes: React.FC = ({ episodes }: any) => {
 }
 
 export async function getServerSideProps() {
-  const res = await fetch(`http://localhost:3000/api/episodes`)
+  const res = await fetch(`https://simpsons-page.vercel.app/api/episodes`)
   const episodes = await res.json()
 
   return { props: { episodes } }

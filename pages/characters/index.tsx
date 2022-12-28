@@ -19,7 +19,7 @@ const Characters: React.FC = ({ characters }: any) => {
 }
 
 export async function getServerSideProps() {
-  const res = await fetch(`http://localhost:3000/api/characters`)
+  const res = await fetch(`https://simpsons-page.vercel.app/api/characters`)
   const characters = await res.json()
 
   return { props: { characters } }

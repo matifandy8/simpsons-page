@@ -18,7 +18,7 @@ const Locations: React.FC = ({ locations }: any) => {
 }
 
 export async function getServerSideProps() {
-  const res = await fetch(`http://localhost:3000/api/locations`)
+  const res = await fetch(`https://simpsons-page.vercel.app/api/locations`)
   const locations = await res.json()
 
   return { props: { locations } }

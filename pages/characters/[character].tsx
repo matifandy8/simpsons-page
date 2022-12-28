@@ -19,7 +19,7 @@ const Character: React.FC = ({ character }: any) => {
 export const getServerSideProps = async (pageContext: any) => {
   const pathurl = pageContext.params;
   const apiResponse = await fetch(
-    `http://localhost:3000/api/characters/${pathurl.character}`
+    `https://simpsons-page.vercel.app/api/characters/${pathurl.character}`
   );
   const character = await apiResponse.json();
 
