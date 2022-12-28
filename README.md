@@ -4,7 +4,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## About Project
 Info from the famous simpsons series
 
-![alt text](https://github.com/thecodebuzz/FileSizePOC/blob/master/TheCodebuzz.png?raw=true)
+![alt text](https://res.cloudinary.com/dp7vfoqbw/image/upload/v1672185622/thesimpsons_gdvxar.png?raw=true)
 
 ## Getting Started
 
