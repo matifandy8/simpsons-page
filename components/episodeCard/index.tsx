@@ -12,9 +12,8 @@ const EpisodeCard: React.FC<any> = ({ episodeItem }: any) => {
             <div className={styles.image}>
                 <Image src={episodeItem.image} alt={episodeItem.name} width={200} height={150} />
                 <div className={styles.middle}>
-                    <Link href="/episodes">
+                    <Link href={"/episodes/" + episodeItem.id}>
                         <p className={styles.text}></p>
-
                     </Link>
                 </div>
             </div>

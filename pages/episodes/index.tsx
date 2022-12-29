@@ -27,7 +27,7 @@ const Episodes: React.FC = ({ episodes }: any) => {
 }
 
 export async function getServerSideProps() {
-  const res = await fetch(`https://simpsons-page.vercel.app/api/episodes`)
+  const res = await fetch(`http://localhost:3000/api/episodes`)
   const episodes = await res.json()
 
   return { props: { episodes } }
