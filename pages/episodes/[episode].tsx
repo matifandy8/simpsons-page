@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
 import styles from '../../styles/Episodes.module.scss'
 import ReactPlayer from 'react-player'
 
@@ -11,7 +10,7 @@ const Episode: React.FC = ({ episode }: any) => {
         <h1>{episode.name}</h1>
         <p>{episode.date}</p>
         <div>
-        <ReactPlayer url='' playing controls />
+        <ReactPlayer url={episode.videoUrl} playing controls />
         </div>
       </div>
     </div>

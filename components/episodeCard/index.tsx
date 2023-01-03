@@ -13,7 +13,7 @@ const EpisodeCard: React.FC<any> = ({ episodeItem }: any) => {
                 <Image src={episodeItem.image} alt={episodeItem.name} width={200} height={150} />
                 <div className={styles.middle}>
                     <Link href={"/episodes/" + episodeItem.id}>
-                        <p className={styles.text}></p>
+                        <p className={styles.text}><img src="/play.svg" alt="" /></p>
                     </Link>
                 </div>
             </div>
