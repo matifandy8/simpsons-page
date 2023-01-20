@@ -15,19 +15,19 @@ export const locations = [
 ]
 
 export const episodes = [
-    { "id": "1","videoUrl": "https://www.youtube.com/watch?v=DBTfMiOvyj8&t=2s", "date": "December 17, 1989", "name": "Simpsons Roasting on an Open Fire", "image": "https://res.cloudinary.com/dp7vfoqbw/image/upload/v1670793347/simpsons_xbg6jd.jpg" },
-    { "id": "2","videoUrl": "https://www.youtube.com/watch?v=DBTfMiOvyj8&t=2s", "date": "January 14, 1990", "name": "Bart the Genius", "image": "https://res.cloudinary.com/dp7vfoqbw/image/upload/v1670793347/simpsons_xbg6jd.jpg" },
-    { "id": "3","videoUrl": "https://www.youtube.com/watch?v=DBTfMiOvyj8&t=2s", "date": "January 21, 1990", "name": "Homer's Odyssey", "image": "https://res.cloudinary.com/dp7vfoqbw/image/upload/v1670793347/simpsons_xbg6jd.jpg" },
-    { "id": "4","videoUrl": "https://www.youtube.com/watch?v=DBTfMiOvyj8&t=2s", "date": "January 28, 1990", "name": "There's No Disgrace Like Home", "image": "https://res.cloudinary.com/dp7vfoqbw/image/upload/v1670793347/simpsons_xbg6jd.jpg" },
-    { "id": "5","videoUrl": "https://www.youtube.com/watch?v=DBTfMiOvyj8&t=2s", "date": "February 4, 1990", "name": "Bart the General", "image": "https://res.cloudinary.com/dp7vfoqbw/image/upload/v1670793347/simpsons_xbg6jd.jpg" },
-    { "id": "6","videoUrl": "https://www.youtube.com/watch?v=DBTfMiOvyj8&t=2s", "date": "February 11, 1990", "name": "Moaning Lisa", "image": "https://res.cloudinary.com/dp7vfoqbw/image/upload/v1670793347/simpsons_xbg6jd.jpg" },
-    { "id": "7","videoUrl": "https://www.youtube.com/watch?v=DBTfMiOvyj8&t=2s", "date": "February 18, 1990", "name": "The Call of the Simpsons", "image": "https://res.cloudinary.com/dp7vfoqbw/image/upload/v1670793347/simpsons_xbg6jd.jpg" },
-    { "id": "8","videoUrl": "https://www.youtube.com/watch?v=DBTfMiOvyj8&t=2s", "date": "February 25, 1990", "name": "The Telltale Head", "image": "https://res.cloudinary.com/dp7vfoqbw/image/upload/v1670793347/simpsons_xbg6jd.jpg" },
-    { "id": "9","videoUrl": "https://www.youtube.com/watch?v=DBTfMiOvyj8&t=2s", "date": "March 15, 1990", "name": "Life on the Fast Lane", "image": "https://res.cloudinary.com/dp7vfoqbw/image/upload/v1670793347/simpsons_xbg6jd.jpg" },
-    { "id": "10","videoUrl": "https://www.youtube.com/watch?v=DBTfMiOvyj8&t=2s", "date": "March 25, 1990", "name": "Homer's Night Out", "image": "https://res.cloudinary.com/dp7vfoqbw/image/upload/v1670793347/simpsons_xbg6jd.jpg" },
-    { "id": "11","videoUrl": "https://www.youtube.com/watch?v=DBTfMiOvyj8&t=2s", "date": "April 15, 1990", "name": "The Crepes of Wrath", "image": "https://res.cloudinary.com/dp7vfoqbw/image/upload/v1670793347/simpsons_xbg6jd.jpg" },
-    { "id": "12","videoUrl": "https://www.youtube.com/watch?v=DBTfMiOvyj8&t=2s", "date": "April 29, 1990", "name": "Krusty Gets Busted", "image": "https://res.cloudinary.com/dp7vfoqbw/image/upload/v1670793347/simpsons_xbg6jd.jpg" },
-    { "id": "13","videoUrl": "https://www.youtube.com/watch?v=DBTfMiOvyj8&t=2s", "date": "May 13, 1990", "name": "Some Enchanted Evening", "image": "https://res.cloudinary.com/dp7vfoqbw/image/upload/v1670793347/simpsons_xbg6jd.jpg" }
+    { "id": "1", "videoUrl": "https://www.youtube.com/watch?v=DBTfMiOvyj8&t=2s", "date": "December 17, 1989", "name": "Simpsons Roasting on an Open Fire", "image": "https://res.cloudinary.com/dp7vfoqbw/image/upload/v1670793347/simpsons_xbg6jd.jpg" },
+    { "id": "2", "videoUrl": "https://www.youtube.com/watch?v=DBTfMiOvyj8&t=2s", "date": "January 14, 1990", "name": "Bart the Genius", "image": "https://res.cloudinary.com/dp7vfoqbw/image/upload/v1670793347/simpsons_xbg6jd.jpg" },
+    { "id": "3", "videoUrl": "https://www.youtube.com/watch?v=DBTfMiOvyj8&t=2s", "date": "January 21, 1990", "name": "Homer's Odyssey", "image": "https://res.cloudinary.com/dp7vfoqbw/image/upload/v1670793347/simpsons_xbg6jd.jpg" },
+    { "id": "4", "videoUrl": "https://www.youtube.com/watch?v=DBTfMiOvyj8&t=2s", "date": "January 28, 1990", "name": "There's No Disgrace Like Home", "image": "https://res.cloudinary.com/dp7vfoqbw/image/upload/v1670793347/simpsons_xbg6jd.jpg" },
+    { "id": "5", "videoUrl": "https://www.youtube.com/watch?v=DBTfMiOvyj8&t=2s", "date": "February 4, 1990", "name": "Bart the General", "image": "https://res.cloudinary.com/dp7vfoqbw/image/upload/v1670793347/simpsons_xbg6jd.jpg" },
+    { "id": "6", "videoUrl": "https://www.youtube.com/watch?v=DBTfMiOvyj8&t=2s", "date": "February 11, 1990", "name": "Moaning Lisa", "image": "https://res.cloudinary.com/dp7vfoqbw/image/upload/v1670793347/simpsons_xbg6jd.jpg" },
+    { "id": "7", "videoUrl": "https://www.youtube.com/watch?v=DBTfMiOvyj8&t=2s", "date": "February 18, 1990", "name": "The Call of the Simpsons", "image": "https://res.cloudinary.com/dp7vfoqbw/image/upload/v1670793347/simpsons_xbg6jd.jpg" },
+    { "id": "8", "videoUrl": "https://www.youtube.com/watch?v=DBTfMiOvyj8&t=2s", "date": "February 25, 1990", "name": "The Telltale Head", "image": "https://res.cloudinary.com/dp7vfoqbw/image/upload/v1670793347/simpsons_xbg6jd.jpg" },
+    { "id": "9", "videoUrl": "https://www.youtube.com/watch?v=DBTfMiOvyj8&t=2s", "date": "March 15, 1990", "name": "Life on the Fast Lane", "image": "https://res.cloudinary.com/dp7vfoqbw/image/upload/v1670793347/simpsons_xbg6jd.jpg" },
+    { "id": "10", "videoUrl": "https://www.youtube.com/watch?v=DBTfMiOvyj8&t=2s", "date": "March 25, 1990", "name": "Homer's Night Out", "image": "https://res.cloudinary.com/dp7vfoqbw/image/upload/v1670793347/simpsons_xbg6jd.jpg" },
+    { "id": "11", "videoUrl": "https://www.youtube.com/watch?v=DBTfMiOvyj8&t=2s", "date": "April 15, 1990", "name": "The Crepes of Wrath", "image": "https://res.cloudinary.com/dp7vfoqbw/image/upload/v1670793347/simpsons_xbg6jd.jpg" },
+    { "id": "12", "videoUrl": "https://www.youtube.com/watch?v=DBTfMiOvyj8&t=2s", "date": "April 29, 1990", "name": "Krusty Gets Busted", "image": "https://res.cloudinary.com/dp7vfoqbw/image/upload/v1670793347/simpsons_xbg6jd.jpg" },
+    { "id": "13", "videoUrl": "https://www.youtube.com/watch?v=DBTfMiOvyj8&t=2s", "date": "May 13, 1990", "name": "Some Enchanted Evening", "image": "https://res.cloudinary.com/dp7vfoqbw/image/upload/v1670793347/simpsons_xbg6jd.jpg" }
 ]
 
 export const seasons = [
@@ -65,4 +65,31 @@ export const seasons = [
     { "id": "32" },
     { "id": "33" },
     { "id": "34" }
-] 
+]
+
+export const comments = [
+    {
+        id: 1,
+        text: "First comment",
+        username: "Jack",
+        createdAt: "2021-08-16T23:00:33.010+02:00",
+    },
+    {
+        id: 2,
+        text: "Second comment",
+        username: "John",
+        createdAt: "2021-08-16T23:00:33.010+02:00",
+    },
+    {
+        id: 3,
+        text: "First comment first child",
+        username: "John",
+        createdAt: "2021-08-16T23:00:33.010+02:00",
+    },
+    {
+        id: 4,
+        text: "Second comment second child",
+        username: "John",
+        createdAt: "2021-08-16T23:00:33.010+02:00",
+    },
+];
