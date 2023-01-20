@@ -9,7 +9,7 @@ const SectionCard: React.FC<any> = ({ sectionItem }: any) => {
     return (
         <div key={sectionItem.id} className={styles.card}>
             <Link href={sectionItem.link} className={styles.card_link}>
-                <Image src={sectionItem.image} alt={sectionItem.name} width={400} height={350} />
+                <Image src={sectionItem.image} alt={sectionItem.name} layout="fill" className={styles.card_image} />
             </Link>
             <h2>{sectionItem.name}</h2>
         </div>
