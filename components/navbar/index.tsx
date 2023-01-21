@@ -8,7 +8,7 @@ import Link from 'next/link'
 
 export default function Navbar() {
     return (
-        <nav className={styles.nav_container} >
+        <nav className={styles.nav} >
             <Link href={"/"}>
                 <div className={styles.brand}>
                     <Image
@@ -20,7 +20,7 @@ export default function Navbar() {
                 </div>
             </Link>
             <nav>
-                <ul className={styles.nav_list}>
+                <ul className={styles.list}>
                     <li><Link href={"/episodes"} className={styles.link}>Episodes</Link></li>
                     <li><Link href={"/locations"} className={styles.link}>Locations</Link></li>
                     <li><Link href={"/characters"} className={styles.link}>Characters</Link></li>
