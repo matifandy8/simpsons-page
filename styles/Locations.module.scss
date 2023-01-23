@@ -26,12 +26,3 @@ $black: #161616;
     flex-direction: column;
 }
 
-
-@media (min-width: 850px) {
-    .character{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: row;
-    }
-}

@@ -24,6 +24,12 @@ $black: #161616;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    @media (min-width: 850px) {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: row;
+    }
 }
 .quote{
     padding: 30px;
@@ -31,11 +37,4 @@ $black: #161616;
 .quote_text{
     font-size: 14px;
 }
-@media (min-width: 850px) {
-    .character{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: row;
-    }
-}
+

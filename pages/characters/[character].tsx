@@ -7,7 +7,7 @@ import styles from '../../styles/Characters.module.scss'
 const Character: React.FC = ({ character }: any) => {
   return (
     <div className={styles.character}>
-      <div className='character_info'>
+      <div className={styles.characterInfo}>
         <h1>{character.name}</h1>
         <Image src={character.image} alt={character.name} width={200} height={300} />
       </div>

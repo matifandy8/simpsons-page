@@ -100,6 +100,10 @@ $black: #161616;
 
     .info {
         max-width: 450px;
+
+        @media (min-width: 768px) {
+            max-width: 1140px;
+        }
     }
 
     .video {
@@ -108,6 +112,10 @@ $black: #161616;
 
     .comments {
         width: 75%;
+
+        @media (min-width: 768px) {
+            width: 650px;
+        }
 
         .listComments {}
 
@@ -149,20 +157,5 @@ $black: #161616;
             }
         }
 
-    }
-}
-
-
-
-
-@media (min-width: 750px) {
-    .episode {
-        .info {
-            max-width: 1140px;
-        }
-
-        .comments {
-            width: 650px;
-        }
     }
 }
