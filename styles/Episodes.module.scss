@@ -112,12 +112,30 @@ $black: #161616;
 
     .comments {
         width: 75%;
+        margin-bottom: 80px;
 
         @media (min-width: 768px) {
             width: 650px;
         }
 
-        .listComments {}
+        .listComments {
+            margin: 30px;
+            .comment{
+                .commentInfo{
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                }
+
+                .commentDate{
+                   color: gray;
+                   font-size: 12px;
+                }
+                .commentText{
+                    margin: 1px;
+                }
+            }
+        }
 
         .commentForm {
             display: flex;
@@ -132,6 +150,7 @@ $black: #161616;
                 font-size: 14px;
                 line-height: 16px;
                 border: 2px solid #000;
+                margin: 10px 0px;
             }
 
             textarea {

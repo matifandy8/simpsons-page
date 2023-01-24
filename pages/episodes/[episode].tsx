@@ -21,8 +21,11 @@ const Episode: React.FC = ({ episode, comments }: any) => {
         <div className={styles.listComments}>
           {comments.map((comment: any) => (
             <div key={comment.id} className={styles.comment}>
-              <span>{comment.createdAt}</span>
-              <p>{comment.text}</p>
+              <div className={styles.commentInfo}>
+                <p>{comment.username}</p>
+                <span className={styles.commentDate} >{comment.createdAt}</span>
+              </div>
+              <p className={styles.commentText} >{comment.text}</p>
             </div>
           ))}
         </div>

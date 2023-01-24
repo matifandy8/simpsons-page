@@ -71,25 +71,25 @@ export const comments = [
     {
         id: 1,
         text: "First comment",
-        username: "Jack",
+        username: "Jack Honda",
         createdAt: "2021-08-16T23:00:33.010+02:00",
     },
     {
         id: 2,
         text: "Second comment",
-        username: "John",
+        username: "John Bryant",
         createdAt: "2021-08-16T23:00:33.010+02:00",
     },
     {
         id: 3,
         text: "First comment first child",
-        username: "John",
+        username: "Antony James",
         createdAt: "2021-08-16T23:00:33.010+02:00",
     },
     {
         id: 4,
         text: "Second comment second child",
-        username: "John",
+        username: "Michael Ford",
         createdAt: "2021-08-16T23:00:33.010+02:00",
     },
 ];
