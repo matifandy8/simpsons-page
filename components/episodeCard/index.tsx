@@ -2,11 +2,12 @@ import React from 'react'
 import Image from 'next/image'
 import styles from '../../styles/Episodes.module.scss'
 import Link from 'next/link'
+import { EpisodesType } from '../../types'
 
 
 
 
-const EpisodeCard: React.FC<any> = ({ episodeItem }: any) => {
+const EpisodeCard: React.FC<any> = ( episodeItem : EpisodesType) => {
     return (
         <div key={episodeItem.id} className={styles.card}>
             <div className={styles.image}>

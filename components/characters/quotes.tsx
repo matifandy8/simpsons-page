@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import styles from '../../styles/Characters.module.scss'
+import { CharactersType } from '../../types'
 
 
 
-const Quotes: React.FC<any> = ({ characterName }: any) => {
+const Quotes: React.FC<any> = (characterName: CharactersType['name']) => {
     const [data, setData] = useState<any>([])
     const [isLoading, setLoading] = useState(false)
 

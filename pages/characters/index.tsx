@@ -2,8 +2,9 @@ import Link from 'next/link'
 import React from 'react'
 import CharacterCard from '../../components/characters/characterCard'
 import styles from '../../styles/Characters.module.scss'
+import { CharactersType } from '../../types'
 
-const Characters: React.FC = ({ characters }: any) => {
+const Characters = (characters : CharactersType[]) => {
   return (
     <div>
       <h1 className={styles.title}>Characters</h1>
@@ -22,7 +23,7 @@ export async function getServerSideProps() {
   const res = await fetch(`https://simpsons-page.vercel.app/api/characters`)
   const characters = await res.json()
 
-  return { props: { characters } }
+  return { props:  characters  }
 }
 
 export default Characters

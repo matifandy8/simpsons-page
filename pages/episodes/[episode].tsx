@@ -2,10 +2,11 @@ import React from 'react'
 import styles from '../../styles/Episodes.module.scss'
 import ReactPlayer from 'react-player'
 import CommentForm from '../../components/commentForm'
+import { CommentsType, EpisodesType } from '../../types'
 
 
-const Episode: React.FC = ({ episode, comments }: any) => {
-  console.log(comments)
+const Episode = (episode: EpisodesType, comments: CommentsType[]) => {
+
   return (
     <div className={styles.episode}>
       <div className={styles.info}>
@@ -19,7 +20,7 @@ const Episode: React.FC = ({ episode, comments }: any) => {
       <div className={styles.comments}>
         <CommentForm />
         <div className={styles.listComments}>
-          {comments.map((comment: any) => (
+          {comments.map((comment: CommentsType) => (
             <div key={comment.id} className={styles.comment}>
               <div className={styles.commentInfo}>
                 <p>{comment.username}</p>

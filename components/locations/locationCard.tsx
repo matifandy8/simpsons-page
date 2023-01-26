@@ -2,11 +2,12 @@ import React from 'react'
 import Image from 'next/image'
 import styles from '../../styles/Locations.module.scss'
 import Link from 'next/link'
+import { LocationsType } from '../../types'
 
 
 
 
-const LocationCard: React.FC<any> = ({ locationItem }: any) => {
+const LocationCard: React.FC<any> = (locationItem: LocationsType) => {
     return (
         <div key={locationItem.id} className={styles.card}>
             <Image src={locationItem.image} alt={locationItem.name} width={200} height={150} />
