@@ -4,7 +4,7 @@ import { CharactersType } from '../../types'
 
 
 
-const Quotes: React.FC<any> = (characterName: CharactersType['name']) => {
+const Quotes: React.FC<any> = ({ characterName }) => {
     const [data, setData] = useState<any>([])
     const [isLoading, setLoading] = useState(false)
 

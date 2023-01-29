@@ -1,10 +1,12 @@
 import React from 'react'
 import EpisodeCard from '../../components/episodeCard'
 import { seasons } from '../../data'
+import { fetchDataEpisodes } from '../../services/apiCalls'
 import styles from '../../styles/Episodes.module.scss'
 import { EpisodesType } from '../../types'
 
-const Episodes = (episodes: EpisodesType[]) => {
+const Episodes = ({ episodes }: any) => {
+  console.log(episodes)
   return (
     <div>
       <h1 className={styles.title}>Episodes</h1>
@@ -17,10 +19,15 @@ const Episodes = (episodes: EpisodesType[]) => {
         </select>
       </div>
       <div className={styles.episodes}>
-        {episodes.map((episode: any) => (
-          <EpisodeCard key={episode.id} episodeItem={episode} />
-        ))}
-
+        {
+          episodes.length === 0 ? (
+            <h3>No characters to show</h3>
+          ) : (
+            episodes?.map((episode: any) => (
+              <EpisodeCard key={episode.id} name={episode.name} image={episode.image} id={episode.id} date={episode.date} />
+            ))
+          )
+        }
       </div>
     </div>
 
@@ -28,10 +35,9 @@ const Episodes = (episodes: EpisodesType[]) => {
 }
 
 export async function getServerSideProps() {
-  const res = await fetch(`http://localhost:3000/api/episodes`)
-  const episodes = await res.json()
+  const episodes = await fetchDataEpisodes();
 
-  return { props: episodes }
+  return { props: { episodes } }
 }
 
 export default Episodes

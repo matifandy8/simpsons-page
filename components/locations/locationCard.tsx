@@ -7,12 +7,12 @@ import { LocationsType } from '../../types'
 
 
 
-const LocationCard: React.FC<any> = (locationItem: LocationsType) => {
+const LocationCard: React.FC<any> = ({ name, image, id }) => {
     return (
-        <div key={locationItem.id} className={styles.card}>
-            <Image src={locationItem.image} alt={locationItem.name} width={200} height={150} />
-            <h2>{locationItem.name}</h2>
-            <Link href={"/locations/" + locationItem.id}><h3>More info</h3></Link>
+        <div key={id} className={styles.card}>
+            <Image src={image} alt={name} width={200} height={150} />
+            <h2>{name}</h2>
+            <Link href={"/locations/" + id}><h3>More info</h3></Link>
         </div>
     )
 }

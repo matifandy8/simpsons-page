@@ -7,14 +7,18 @@ import { CharactersType } from '../../types'
 
 
 
-const CharacterCard: React.FC<any> = (CharacterItem: CharactersType) => {
-    return (
-        <div key={CharacterItem.id} className={styles.card}>
-            <Image src={CharacterItem.image} alt={CharacterItem.name} width={150} height={250} />
-            <h2>{CharacterItem.name}</h2>
-            <Link href={"/characters/" + CharacterItem.id}><h3>More info</h3></Link>
-        </div>
-    )
+const CharacterCard = ({ name, image, id }: any) => {
+  return (
+    <div className={styles.card}>
+      {image ? (
+        <Image src={image} alt={name} width={150} height={250} />
+      ) : (
+        <Image src="https://liftlearning.com/wp-content/uploads/2020/09/default-image-300x169.png" alt={name} width={150} height={250} />
+      )}
+      <h2>{name}</h2>
+      <Link href={"/characters/" + id}><h3>More info</h3></Link>
+    </div>
+  )
 }
 
 export default CharacterCard;

@@ -6,15 +6,14 @@ import { GetServerSideProps, InferGetServerSidePropsType } from 'next/types'
 import { CharactersType } from '../../types'
 
 
-const Character = (character: CharactersType) => {
-  console.log(character)
+const Character = ({ name, image, id }: CharactersType) => {
   return (
     <div className={styles.character}>
       <div className={styles.characterInfo}>
-        <h1>{character.name}</h1>
-        <Image src={character.image} alt={character.name} width={200} height={300} />
+        <h1>{name}</h1>
+        <Image src={image} alt={name} width={200} height={300} />
       </div>
-      <Quotes characterName={character.name} />
+      <Quotes characterName={name} />
     </div>
   )
 }

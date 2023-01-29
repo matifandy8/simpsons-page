@@ -7,19 +7,19 @@ import { EpisodesType } from '../../types'
 
 
 
-const EpisodeCard: React.FC<any> = ( episodeItem : EpisodesType) => {
+const EpisodeCard: React.FC<any> = ({ name, image, id, date }: EpisodesType) => {
     return (
-        <div key={episodeItem.id} className={styles.card}>
+        <div key={id} className={styles.card}>
             <div className={styles.image}>
-                <Image src={episodeItem.image} alt={episodeItem.name} width={200} height={150} />
+                <Image src={image} alt={name} width={200} height={150} />
                 <div className={styles.middle}>
-                    <Link href={"/episodes/" + episodeItem.id}>
+                    <Link href={"/episodes/" + id}>
                         <p className={styles.text}><img src="/play.svg" alt="" /></p>
                     </Link>
                 </div>
             </div>
-            <h2>{episodeItem.id}: {episodeItem.name}</h2>
-            <p>{episodeItem.date}</p>
+            <h2>{id}: {name}</h2>
+            <p>{date}</p>
         </div>
     )
 }

@@ -5,7 +5,7 @@ import CommentForm from '../../components/commentForm'
 import { CommentsType, EpisodesType } from '../../types'
 
 
-const Episode = (episode: EpisodesType, comments: CommentsType[]) => {
+const Episode = ({episode, comments}:any) => {
 
   return (
     <div className={styles.episode}>
