@@ -7,6 +7,13 @@ import { CommentsType, EpisodesType } from '../../types'
 
 const Episode = ({episode, comments}:any) => {
 
+  //  const newDate = new Date(date);
+  //  const options:any = { year: 'numeric', month: 'short', day: 'numeric' };
+  //  const dateFormatted = newDate.toLocaleDateString('en-US', options)
+  //  console.log(dateFormatted);
+
+  
+
   return (
     <div className={styles.episode}>
       <div className={styles.info}>
