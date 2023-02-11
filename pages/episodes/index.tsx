@@ -6,7 +6,6 @@ import styles from '../../styles/Episodes.module.scss'
 import { EpisodesType } from '../../types'
 
 const Episodes = ({ episodes }: any) => {
-  console.log(episodes)
   return (
     <div>
       <h1 className={styles.title}>Episodes</h1>
