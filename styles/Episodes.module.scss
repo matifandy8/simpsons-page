@@ -124,7 +124,14 @@ $black: #161616;
                 .commentInfo{
                     display: flex;
                     align-items: center;
-                    gap: 5px;
+                    gap: 15px;
+
+                    .commentImage{
+                        img{
+                            width: 40px;
+                            height: 40px;
+                        }
+                    }
                 }
 
                 .commentDate{
@@ -132,7 +139,7 @@ $black: #161616;
                    font-size: 12px;
                 }
                 .commentText{
-                    margin: 1px;
+                    margin-left: 55px;
                 }
             }
         }
