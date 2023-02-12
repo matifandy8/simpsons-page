@@ -35,7 +35,7 @@ const CommentForm: React.FC = () => {
                 <input type="text" placeholder='Your name' value={name} onChange={(e) => setName(e.target.value)} />
                 <label>Comment</label>
                 <textarea value={commentText} onChange={(e) => setCommentText(e.target.value)} />
-                <button type="submit">Post</button>
+                <button className={styles.btn}  type="submit">Post</button>
             </form>
 
         </div>

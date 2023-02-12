@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from '../../styles/Episodes.module.scss'
 import ReactPlayer from 'react-player'
 import CommentForm from '../../components/commentForm'
@@ -8,11 +8,14 @@ import { db } from '../../firebase'
 
 
 const Episode = ({ episode, comments }: any) => {
+  const [showMore, setShowMore] = useState(false);
+  let ListComments = showMore ? comments : comments.slice(0, 3);
+
   const capitalize = (str: string) => str.replace(/^\w/, c => c.toUpperCase());
 
   function getHumanReadableDate(dateString: string) {
     const date = new Date(dateString);
-    const options:any = {
+    const options: any = {
       year: "numeric",
       month: "long",
       day: "numeric",
@@ -33,7 +36,7 @@ const Episode = ({ episode, comments }: any) => {
       <div className={styles.comments}>
         <CommentForm />
         <div className={styles.listComments}>
-          {comments.map((comment: any) => (
+          {ListComments.map((comment: any) => (
             <div key={comment.timestamp} className={styles.comment}>
               <div className={styles.commentInfo}>
                 <div className={styles.commentImage}>
@@ -46,6 +49,9 @@ const Episode = ({ episode, comments }: any) => {
               <hr />
             </div>
           ))}
+          <button className={styles.btnSecondary}  onClick={() => setShowMore(!showMore)}>
+            {showMore ? "Show less" : "Show more"}
+          </button>
         </div>
       </div>
     </div>
