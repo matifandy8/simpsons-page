@@ -15,6 +15,9 @@ $black: #161616;
     align-items: stretch;
     padding: 1rem;
     padding-bottom: 200px;
+    .empty {
+        border: 1px solid red;
+      }
 }
 
 .selectSeason {
@@ -172,6 +175,13 @@ $black: #161616;
     }
 }
 
+.commentError  {
+ color: red;
+}
+.commentSuccess{
+    color: green;
+}
+
 
 .btn {
     background-color: #000;
@@ -205,3 +215,4 @@ $black: #161616;
         color: #000;
     }
 }
+
